@@ -22,3 +22,9 @@ const words = [
 
 const randomIndex = getRandomNumberUpTo(words.length)
 wordElement.innerText = words[randomIndex]
+
+
+// probably also want to maybe set something in the dom
+// help students get started with that
+const guessingResults = document.querySelector("#guessing-results")
+guessingResults.innerText = '-'.repeat(words[randomIndex].length)
